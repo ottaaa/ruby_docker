@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ruby:
+    build: .
+    command: ruby main.rb
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/myapp:cached
